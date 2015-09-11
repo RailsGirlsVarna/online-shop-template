@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Loading of meta data -->
+	<head>
+		<!-- Support of Mobile view -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Source -->
+		<meta charset="utf-8" /> 
+
+		<title>Apple Macbook 13.3" White Laptop, 2GHz Intel Core Duo</title>
+
+		<meta name="description" content="Apple Macbook 13.3&quot; White Laptop, 2GHz Intel Core Duo">
+
+		<!-- 
+			Paths types:
+			1) Absolute: http(s)://www.example.com/assets/favicon/favicon.ico
+			2) Relative: Remove public part: http(s)://www.example.com
+		-->
+		<link rel="shortcut icon" href="assets/favicon/Pixelmixer-Basic-Buy.ico">
+
+		<style type="text/css">
+		/** Type of selector by html tag **/
+		body {
+			/** Default - 12px **/
+			font-size: 62.5%;
+			/** Font size - 10px = 12 * 62.5 = 10px */
+		}
+
+		a {
+			color: rgb(0, 255, 255);
+		}
+
+		section {
+			background-color: #ccc;
+			background-color: red;
+			background-color: #c9c9c9;
+			/** 
+				rgb - RegGreenBlue 
+				0 - Absolute Black
+				255 - Absolute White
+			**/
+			background-color: rgb(0, 127, 127);
+
+			/**
+				rgba - RedGreenBlue + Opacity
+			**/
+			background-color: rgb(0, 0, 0, .1);
+		}
+
+		section {
+			background-color: #ccc;
+		}
+
+		/** Type of selector by id **/
+		#my-id {
+			color: rgb(0, 0, 0);
+			border: .1em solid red;
+			background-color: green; 
+		}
+
+		/** Type of selector by class **/
+		/** N times **/
+		.standart-blue-button {
+			/** Position **/
+			position: relative;
+			top: 0;
+			left: 0;
+			/** Position **/
+
+			/** Dimensions **/
+			display: inline-block;
+			/** top and bottom - 5px **/
+			/** left and right - 3px **/
+			padding: .5em .3em; 
+			/** Dimensions **/
+
+			/** Style **/
+			font-size: 1.4em; /** 10px * 1.4 = 14px */
+			color: rgb(255, 255, 255);
+			border: .3em solid blue;
+			background-color: black; 
+			cursor: pointer;
+			/** Style **/
+		}
+
+		.standart-blue-button:hover {
+			/** Style **/
+			color: rgb(0, 0, 0);
+			border: .1em solid blue;
+			background-color: white; 
+		}
+
+		/** Type of selector by html tag **/
+
+		/** Type of selector by html tag and attribute **/
+		input[type="text"] {
+			background-color: rgba(0, 0, 0, .3);
+		}
+
+		.circle-border-radius {
+			-webkit-border-radius: 25%; /** CSS 3 **/
+			   -moz-border-radius: 25%; /** CSS 3 **/
+				 	border-radius: 25%; /** CSS 3 **/
+		}
+		</style>
+	</head>
+
+	<!-- Public Part -->
+	<body>
+		<section>
+			<form action="/">
+				<input type="text" placeholder="Username"/>
+
+				<input type="password" placeholder="Password"/>
+
+				<input class="standart-blue-button" 
+					type="submit" name="Please submit">
+			</form>
+		</section>
+		
+
+		<span 
+			id="my-id"
+			class="standart-blue-button">Search</span>
+
+		<span 
+			id="my-id"
+			class="standart-blue-button">Find info</span>
+
+		<a class="standart-blue-button circle-border-radius">My Info</a>	
+	</body>
+</html>
