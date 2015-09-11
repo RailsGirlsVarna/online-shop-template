@@ -1,0 +1,72 @@
+section {
+	background-color: #ccc;
+	background-color: red;
+	background-color: #c9c9c9;
+	/** 
+		rgb - RegGreenBlue 
+		0 - Absolute Black
+		255 - Absolute White
+	**/
+	background-color: rgb(0, 127, 127);
+
+	/**
+		rgba - RedGreenBlue + Opacity
+	**/
+	background-color: rgb(0, 0, 0, .1);
+}
+
+section {
+	background-color: #ccc;
+}
+
+/** Type of selector by id **/
+#my-id {
+	color: rgb(0, 0, 0);
+	border: .1em solid red;
+	background-color: green; 
+}
+
+/** Type of selector by class **/
+/** N times **/
+.standart-blue-button {
+	/** Position **/
+	position: relative;
+	top: 0;
+	left: 0;
+	/** Position **/
+
+	/** Dimensions **/
+	display: inline-block;
+	/** top and bottom - 5px **/
+	/** left and right - 3px **/
+	padding: .5em .3em; 
+	/** Dimensions **/
+
+	/** Style **/
+	font-size: 1.4em; /** 10px * 1.4 = 14px */
+	color: rgb(255, 255, 255);
+	border: .3em solid blue;
+	background-color: black; 
+	cursor: pointer;
+	/** Style **/
+}
+
+.standart-blue-button:hover {
+	/** Style **/
+	color: rgb(0, 0, 0);
+	border: .1em solid blue;
+	background-color: white; 
+}
+
+/** Type of selector by html tag **/
+
+/** Type of selector by html tag and attribute **/
+input[type="text"] {
+	background-color: rgba(0, 0, 0, .3);
+}
+
+.circle-border-radius {
+	-webkit-border-radius: 100%; /** CSS 3 **/
+	   -moz-border-radius: 100%; /** CSS 3 **/
+		 	border-radius: 100%; /** CSS 3 **/
+}
